@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Fake Blog</title>
+        <meta name="description" content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus suscipit faucibus felis vel lacinia. Duis vulputate ultrices felis. Aenean augue augue, tempus ut dui ac, venenatis bibendum justo.">
+    </head>
+    <body>
+        <div id="nav">
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">About</a></li>
+            </ul>
+        </div>
+        <div id="blog-post">
+            <h1>Blog Title</h1>
+            <a href="http://www.lipsum.com">Lorem Ipsum Generator</a>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <span id="bold">Vivamus suscipit faucibus felis vel lacinia. </span>Duis vulputate ultrices felis. Aenean augue augue, tempus ut dui ac, venenatis bibendum justo. Aenean elementum nisl lectus, mollis auctor magna tristique scelerisque. Vestibulum ut lobortis nibh, eget accumsan massa. Proin tempus rutrum lacus, in euismod urna commodo ut. Quisque auctor feugiat arcu, vel iaculis mauris sollicitudin in. Integer et scelerisque purus, eget efficitur erat. Pellentesque sagittis mauris sed rhoncus euismod. Vivamus fermentum magna at egestas interdum.</p>
+            <p>Proin sem tellus, rhoncus non ornare et, vestibulum sit amet dolor. Donec gravida mi vitae lacus porta, id pretium nibh tempor. Proin libero nulla, porta vel nisl vel, semper venenatis lacus. Maecenas erat libero, placerat pharetra auctor vitae, venenatis non ante. Nullam quis quam tempus, congue felis in, aliquam nunc. In elit tellus, pretium in nibh a, tempor ullamcorper dui. Donec felis nisl, vestibulum ut elit mattis, auctor sodales elit. <span id="quote">Pellentesque ultricies condimentum elit, vitae posuere mauris hendrerit egestas. </span>Maecenas in urna neque. Morbi eleifend dictum tellus in semper. Duis nec mauris metus.</p>
+        </div>
+        <table>
+            <thead>
+                <tr>
+                    <th>Heading 1</th>
+                    <th>Heading 2</th>
+                    <th>Heading 3</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>H1Data1</td>
+                    <td>H2Data1</td>
+                    <td>H3Data1</td>
+                </tr>
+                <tr>
+                    <td>H1Data2</td>
+                    <td>H2Data2</td>
+                    <td>H3Data2</td>
+                </tr>
+                <tr>
+                    <td>H1Data3</td>
+                    <td>H2Data3</td>
+                    <td>H3Data3</td>
+                </tr>
+            </tbody>
+        </table>
+        <form action="process.php" method="post">
+            <p>Survey:</p>
+            <label>Name: <input type="text" name="name"></label>
+            <p>Gender: </p>
+            <label><input type="radio" name="gender" value="male"> Male</label>
+            <label><input type="radio" name="gender" value="female"> Female</label>
+            <p>Select a number: </p>
+            <select name="number">
+                <option value="one">1</option>
+                <option value="two">2</option>
+                <option value="three">3</option>
+                <option value="four">4</option>
+                <option value="five">5</option>
+            </select>
+            <p>Choose Colors:</p>
+            <label>
+                <input type="checkbox" name="color" value="red">Red
+            </label>
+            <label>
+                <input type="checkbox" name="color" value="orange">Orange
+            </label>
+            <label>
+                <input type="checkbox" name="color" value="yellow">Yellow
+            </label>
+            <label>
+                <input type="checkbox" name="color" value="green">Green
+            </label>
+            <label>
+                <input type="checkbox" name="color" value="blue">Blue
+            </label>
+            <input type="submit" value="Submit">
+        </form>
+    </body>
+</html>
