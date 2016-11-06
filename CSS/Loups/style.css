@@ -59,14 +59,14 @@
     margin-right: 10px;
     margin-bottom: 10px;
 }
-#bold
-{
-    font-weight: bold;
-}
 #body ul li
 {
     margin-left: 25px;
     margin-bottom: 20px;
+}
+.bold
+{
+    font-weight: bold;
 }
 #footer
 {
