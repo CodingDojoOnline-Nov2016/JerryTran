@@ -4,16 +4,18 @@
 
 function countdown(num)
 {
-    var array = []
+    var array = [];
     for(var i = num; i >= 0; i--)
     {
         if(i >= 0)
         {
             array.push(i);
+            // array[array.length] = i;
         }
     }
     console.log(array.length);
-    console.log(array);
+    return array;
 }
 
-countdown(10)
+var info = countdown(10);
+console.log(info);
