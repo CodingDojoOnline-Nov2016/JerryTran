@@ -1,0 +1,223 @@
+/*CSS reset settings here*/
+{
+    font-family: sans-serif;
+
+    html, body, div, span, applet, object, iframe,
+    h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+    a, abbr, acronym, address, big, cite, code,
+    del, dfn, em, img, ins, kbd, q, s, samp,
+    small, strike, strong, sub, sup, tt, var,
+    b, u, i, center,
+    dl, dt, dd, ol, ul, li,
+    fieldset, form, label, legend,
+    table, caption, tbody, tfoot, thead, tr, th, td,
+    article, aside, canvas, details, embed,
+    figure, figcaption, footer, header, hgroup,
+    menu, nav, output, ruby, section, summary,
+    time, mark, audio, video {
+    	margin: 0;
+    	padding: 0;
+    	border: 0;
+    	font-size: 100%;
+    	vertical-align: baseline;
+    }
+}
+#container
+{
+    width: 970px;
+    background-color: #1a1a1a;
+    padding: 0px 0px 0px 0px;
+    border-left: 5px inset #202020;
+    border-right: 5px outset #202020;
+}
+    #header .contact
+    {
+        display: inline-block;
+        vertical-align: top;
+    }
+    #header img
+    {
+        padding-top: 20px;
+        padding-left: 10px;
+        margin-bottom: 10px;
+    }
+    .contact
+    {
+        margin-left: 610px;
+        padding-top: 20px;
+        color: white;
+        font-size: 12px;
+        font-weight: bold;
+    }
+    #nav_bar
+    {
+        width: 950px;
+        height: 30px;
+        padding-left: 20px;
+        padding-top: 10px;
+        margin: 0px;
+        background: linear-gradient(#515151, #1a1a1a);
+    }
+    #nav_bar li
+    {
+        display: inline;
+    }
+    #nav_bar a
+    {
+        text-decoration: none;
+        font-size: 12px;
+        font-weight: bold;
+        color: gray;
+    }
+    #nav_bar li::after
+    {
+        content: "|";
+        padding-left: 15px;
+        padding-right: 5px;
+        color: #525252;
+    }
+    #nav_bar li:last-child::after
+    {
+        padding-left: 450px;
+    }
+    .symbol
+    {
+        font-size: 8px;
+    }
+#img_scroller img
+{
+    max-width: 970px;
+    margin-top: 0px;
+    border-bottom: 5px solid #3b3b3b;
+}
+#secondary
+{
+    display: inline-block;
+}
+
+    #content1, #content2, #content3, #content4
+    {
+        padding: 30px 0px 30px 30px;
+        display: inline-block;
+        vertical-align: top;
+        width: 200px;
+    }
+    #secondary h1
+    {
+        font-size: 18px;
+        font-family: serif;
+        color: #ef7b27;
+        display: inline-block;
+        vertical-align: top;
+        margin-bottom: 0px;
+    }
+    #secondary p
+    {
+        font-size: 12px;
+        color: white;
+        display: inline-block;
+        vertical-align: top;
+        width: 152px;
+        margin-left: 51px;
+        margin-top: 0px;
+    }
+#ad
+{
+    width: 970px;
+    background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAL0lEQVQYV2NkYGD4z4AEFBQUGBiRBUECDx48QAjCBECawCqRBcCCCgoK/0FakAEANEoRYalIKs4AAAAASUVORK5CYII=);
+}
+    h2, p, #buy_now
+    {
+        display: inline-block;
+        vertical-align: top;
+    }
+    #ad h2
+    {
+        font-weight: normal;
+        padding-left: 35px;
+        margin-top: 30px;
+        margin-bottom: 10px;
+        color: white;
+        font-size: 24px;
+        width: 750px;
+    }
+    #ad p
+    {
+        color: white;
+        padding-left: 35px;
+        padding-bottom: 25px;
+        font-size: 14px;
+        width: 700px;
+    }
+    .buy_now
+    {
+        margin-top: -20px;
+        margin-left: 90px;
+        padding: 10px 20px 10px 20px;
+        background-color: #ef7b27;
+        color: white;
+        border: 0;
+        border-radius: 5px;
+        font-weight: bold;
+    }
+#portfolio
+{
+    width: 970px;
+    margin-left: 30px;
+}
+    .portfolio_header
+    {
+        color: white;
+        font-family: serif;
+        font-size: 16px;
+        font-weight: bold;
+    }
+    .view_portfolio
+    {
+        padding-top: 5px;
+        margin-left: 740px;
+        font-size: 12px;
+        font-style: italic;
+    }
+        .view_portfolio a
+        {
+            color: #ef7b27;
+            text-decoration: none;
+        }
+    #portfolio1, #portfolio2, #portfolio3, #portfolio4
+    {
+        width: 200px;
+        vertical-align: top;
+        margin-right: 30px;
+        display: inline-block;
+    }
+        #portfolio img
+        {
+            max-width: 200px;
+            border: 3px solid gray;
+        }
+        .portfolio_title
+        {
+            font-family: serif;
+            color: #ef7b27;
+            font-size: 14px;
+            font-weight: bold;
+            margin-top: 5px;
+            margin-bottom: 5px;
+        }
+        .portfolio_text
+        {
+            color: white;
+            font-size: 11px;
+            margin-top: 0px;
+        }
+    .top
+    {
+        font-size: 9px;
+        margin-left: 850px;
+    }
+        .top a
+        {
+            color: gray;
+            text-decoration: none;
+        }

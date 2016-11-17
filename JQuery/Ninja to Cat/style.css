@@ -1,0 +1,16 @@
+/*CSS reset settings here*/
+*{
+ margin: 0px;
+ padding: 0px;
+ font-family: Arial;
+}
+
+#container
+{
+    width: 300px;
+    margin: 0px auto;
+}
+#images
+{
+    display: inline-block;
+}
