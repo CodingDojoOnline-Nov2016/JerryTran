@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>JQuery Functions</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.4.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function()
+            {
+                $("#addClassButton").click(function()
+                {
+                    $('#redclass').toggleClass('red');
+                });
+
+                $('#valButton').click(function()
+                {
+                    var rVal = $('input:radio[name="vRadio"]:checked').val();
+                    $('')
+                    $('#displayval').text(rVal);
+                });
+
+                $('#textButton').click(function()
+                {
+                    $("#testText").text("Text Change!");
+                });
+
+                $('#attrButton').click(function()
+                {
+                    $("img").attr("width", "500");
+                });
+
+                $('#htmlButton').click(function()
+                {
+                    $("#htmlText").html('<a href="https://media.tenor.co/images/3ccff8c4b2443d93811eac9b2fd56f11/raw">Hello!</a>');
+                });
+
+                $('input').focus(function()
+                {
+                    $('input').css("background-color", "#cccccc");
+                });
+                $('input').blur(function()
+                {
+                    $('input').css("background-color", "#ffffff");
+                });
+
+                $('#dataStoreButton').click(function()
+                {
+                    var divValue = $("#divData").data("greeting", "Hello");
+                    console.log(divValue);
+                });
+                $('#dataDisplayButton').click(function()
+                {
+                    alert($("#divData").data("greeting"));
+                });
+
+                $('#beforeButton').click(function()
+                {
+                    $("#beforeafterP").before("<p>Before Random Text</p>");
+                });
+                $('#afterButton').click(function()
+                {
+                    $('#beforeafterP').after("<p>After Random Text</p>");
+                });
+
+                $('#appendButton').click(function()
+                {
+                    $('#appendText').append(" Appended Text");
+                });
+
+                $('#showButton').click(function()
+                {
+                    $('#showhideText').show();
+                });
+                $('#hideButton').click(function()
+                {
+                    $('#showhideText').hide();
+                });
+                $('#toggleButton').click(function()
+                {
+                    $('#showhideText').toggle();
+                });
+
+                $('#fadeInButton').click(function()
+                {
+                    $('#fadeText').fadeIn();
+                });
+                $('#fadeOutButton').click(function()
+                {
+                    $('#fadeText').fadeOut();
+                });
+
+                $('#slideUpButton').click(function()
+                {
+                    $('#slideText').slideUp();
+                });
+                $('#slideDownButton').click(function()
+                {
+                    $('#slideText').slideDown();
+                });
+                $('#slideToggleButton').click(function()
+                {
+                    $('#slideText').slideToggle();
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <div id="container">
+            <h1>.addClass</h1>
+            <p id="redclass">Click the button to add class 'red' to this paragraph'</p>
+            <button id="addClassButton" type="button" name="button">Click me!</button>
+            <div class="divider"></div>
+
+            <h1>.val</h1>
+            <input type="radio" name="vRadio" value="1"> 1</input>
+            <input type="radio" name="vRadio" value="2"> 2</input>
+            <p id="valtext">Value is: <span id="displayval"></span></p>
+            <button id="valButton" type="button" name="button">Check Value</button>
+            <div class="divider"></div>
+
+            <h1>.text</h1>
+            <p id="testText">Hi!</p>
+            <button id="textButton" type="button" name="button">Add Text!</button>
+            <div class="divider"></div>
+
+            <h1>.attr</h1>
+            <img id="attr_img" src="img/air-mag.png" alt="Air Mags">
+            <button id="attrButton" type="button" name="button">Click to change width attribute</button>
+            <div class="divider"></div>
+
+            <h1>.html</h1>
+            <p id="htmlText">Hi!</p>
+            <button id="htmlButton" type="button" name="button">Add html to text</button>
+            <div class="divider"></div>
+
+            <h1>.focus</h1>
+            <p id="focusInput">Input Box: <input type="text" name="inputBox"></p>
+            <div class="divider"></div>
+
+            <h1>.data</h1>
+            <button id="dataStoreButton" type="button" name="button">Store data</button>
+            <button id="dataDisplayButton" type="button" name="button">Display data</button>
+            <div id="divData"></div>
+            <div class="divider"></div>
+
+            <h1>.before/.after</h1>
+            <p id="beforeafterP">Random Text</p>
+            <button id="beforeButton" type="button" name="button">Add text before p</button>
+            <button id="afterButton" type="button" name="button">Add Text after p</button>
+            <div class="divider"></div>
+
+            <h1>.append</h1>
+            <p id="appendText">More Random Text</p>
+            <button id="appendButton" type="button" name="button">Append Text</button>
+            <div class="divider"></div>
+
+            <h1>.show/.hide/.toggle</h1>
+            <p id="showhideText">Text here!</p>
+            <button id="showButton" type="button" name="button">Show Text!</button>
+            <button id="hideButton" type="button" name="button">Hide Text!</button>
+            <button id="toggleButton" type="button" name="button">Toggle Text!</button>
+            <div class="divider"></div>
+
+            <h1>.fadein/.fadeout</h1>
+            <p id="fadeText">Text here!</p>
+            <button id="fadeInButton" type="button" name="button">Fade In!</button>
+            <button id="fadeOutButton" type="button" name="button">Fade Out!</button>
+            <div class="divider"></div>
+
+            <h1>.slideDown/.slideUp/.slideToggle</h1>
+            <p id="slideText">Text here!</p>
+            <button id="slideUpButton" type="button" name="button">Slide Up!</button>
+            <button id="slideDownButton" type="button" name="button">Slide Down!</button>
+            <button id="slideToggleButton" type="button" name="button">Slide Toggle!</button>
+            <div class="divider"></div>
+        </div>
+    </body>
+</html>
