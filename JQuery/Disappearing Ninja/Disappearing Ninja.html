@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Disappearing Ninja</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.4.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function()
+            {
+                $("img").click(function()
+                {
+                    $(this).hide();
+                });
+                $("button").click(function()
+                {
+                    $("img").show();
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <div id="container">
+            <h1>Click an image to hide it. Click the restore button at the bottom to restore all images</h1>
+            <div id="images">
+                <img src="img/kanye-west.jpg" alt="Kanye 1" />
+                <img src="img/kanye-west.jpg" alt="Kanye 2" />
+                <img src="img/kanye-west.jpg" alt="Kanye 3" />
+                <img src="img/kanye-west.jpg" alt="Kanye 4" />
+                <img src="img/kanye-west.jpg" alt="Kanye 5" />
+                <img src="img/kanye-west.jpg" alt="Kanye 6" />
+                <img src="img/kanye-west.jpg" alt="Kanye 7" />
+                <img src="img/kanye-west.jpg" alt="Kanye 8" />
+            </div>
+            <button type="button" name="button">Restore</button>
+        </div>
+    </body>
+</html>
