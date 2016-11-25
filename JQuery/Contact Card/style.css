@@ -1,0 +1,41 @@
+* {
+    font-family: arial;
+    padding: 0;
+    margin: 0;
+}
+form{
+    width: 25%;
+    padding: 20px;
+    display: inline-block;
+    vertical-align: top;
+}
+    form input, form textarea
+    {
+        margin-bottom: 10px;
+    }
+    form textarea
+    {
+        width: 100%;
+        display: block;
+    }
+div.cards{
+    width: 50%;
+    display: inline-block;
+    vertical-align: top;
+}
+    div.cards p
+    {
+        display: none;
+    }
+
+        div.cards div
+        {
+            height: 200px;
+            background-color: silver;
+            margin: 10px 0px;
+        }
+            div.cards div h2
+            {
+                text-align: center;
+                padding: 5px;
+            }
